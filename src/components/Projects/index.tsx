@@ -6,6 +6,7 @@ import code from "@/assets/code.png";
 import Image from "next/image";
 import { Github, Lock } from "lucide-react";
 import Loader from "../Loader";
+import goTO from "@/services/util/goTo";
 
 export default function Projects() {
   const [filter, setFilter] = useState<
@@ -125,12 +126,23 @@ export default function Projects() {
                       data-aos="zoom-in"
                     >
                       {pr.siteURL && (
-                        <button id="gradient" className="rounded-full p-2.5">
+                        <button
+                          id="gradient"
+                          className="rounded-full p-2.5"
+                          onClick={() => {
+                            goTO(pr.siteURL, true);
+                          }}
+                        >
                           Ver Projecto
                         </button>
                       )}
                       {pr.gitHubURL && (
-                        <button className=" flex justify-center bg-gradient-to-r from-gray-700 v items-center gap-1  p-2.5 ia-gray-900 to-black rounded-full text-white">
+                        <button
+                          className=" flex justify-center bg-gradient-to-r from-gray-700 v items-center gap-1  p-2.5 ia-gray-900 to-black rounded-full text-white"
+                          onClick={() => {
+                            goTO(pr.gitHubURL, true);
+                          }}
+                        >
                           <Github size={14} /> GitHub
                         </button>
                       )}
