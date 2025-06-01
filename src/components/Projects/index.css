@@ -1,0 +1,32 @@
+#projects{
+  background: rgba(255, 255, 255, 0.041);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  transition: all .5s ease;
+}
+#projects:hover{
+  box-shadow: 1px 1px 3ic #6b31d83d;
+}
+
+#description{
+  background-color: rgba(0, 0, 0, 0.699);
+  top: 0;
+  left: 0;
+  line-height: 25px;
+  max-height: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: all .5s ease;
+  overflow: hidden;
+}
+#description  * {
+  overflow: hidden;
+}
+#description footer{
+  text-wrap: nowrap;
+}
+#projects:hover #description{
+  max-height: 100%;
+}

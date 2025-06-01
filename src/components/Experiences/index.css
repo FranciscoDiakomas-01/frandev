@@ -1,0 +1,7 @@
+#transparent{
+  border: solid 1px #ffffff28;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff0a;
+  backdrop-filter: blur(10px);
+}

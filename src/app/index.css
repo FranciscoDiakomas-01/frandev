@@ -1,0 +1,21 @@
+
+section {
+  min-height: 100dvh;
+  width: 100dvw;
+}
+
+#app{
+  padding: 0;
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+button , svg{
+  cursor: pointer;
+  transition : all 0.2s ease-in-out;
+}
+button:active , svg:active{
+  transform: scale(0.95);
+}

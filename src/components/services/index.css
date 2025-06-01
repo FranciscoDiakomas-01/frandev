@@ -1,0 +1,48 @@
+#services h1 span {
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    30deg,
+    #fff,
+    #8257e5,
+    #5a4fcf,
+    #ffff
+  );
+  background-clip: text;
+}
+
+#service {
+  background: rgba(255, 255, 255, 0.041);
+  backdrop-filter: blur(35px);
+  transition: all 0.5s linear;
+  border: solid 1px transparent;
+}
+#service:hover {
+  box-shadow: 1px 1px 5ic #8257e531;
+  border: solid 1px #8257e5;
+}
+#service div,
+#service img {
+  transition: all 0.5s linear;
+}
+#service div:hover img {
+  transform: translateY(-20px) rotate(40deg) translateX(20px);
+}
+#services div#gradient {
+  
+  box-shadow: 0 0 0 0 rgba(99, 101, 241, 0.562);
+  background-image: repeating-linear-gradient(120deg , #5A4FCF , #653bda);
+}
+#services div aside{
+  background-color: #00000094;
+  min-height: 0%;
+  max-height: 0%;
+  bottom: 0;
+  transition: all .5s linear;
+  left: 0;
+}
+#services div:hover aside{
+  opacity: 1;
+  background-color: #00000094;
+  min-height: 100%;
+  max-height: 100%;
+}
