@@ -14,12 +14,12 @@ export default function About() {
     "UI/UX Designer",
   ];
   return (
-    <section id="about" className="flex flex-col gap-3 items-center pr-[20px] pl-[20px] -pt-[90px] lg:pt-0">
+    <section id="about" className="flex flex-col gap-3 items-center pr-[20px] pl-[20px]  lg:pt-0">
       <aside className="flex lg:justify-evenly lg:items-start items-center pt-[150px] lg:w-[90%] lg:gap-4 gap-[40px] overflow-visible lg:flex-row flex-col">
         <article className="lg:w-[80%] lg:p-2 flex gap-4 flex-col w-[70%] overflow-visible">
           <h1
             data-aos="zoom-in-right"
-            className="text-8xl font-bold overflow-hidden wrap-anywhere"
+            className="lg:text-8xl text-6xl font-bold overflow-hidden wrap-anywhere"
           >
             Francisco Lombo Diakomas
           </h1>
