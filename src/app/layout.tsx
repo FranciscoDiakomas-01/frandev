@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     lastName : "Diakomas",
     siteName : "frandev.dev",
     title : "Frandev",
-    url: "http://localhost:300/frandev.dev",
     authors : ["Francisco Lombo Diakomas"],
     phoneNumbers : ["+244 957 777 993"],
     images : ["/favicon.ico"],
