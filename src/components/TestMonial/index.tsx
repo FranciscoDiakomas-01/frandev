@@ -178,19 +178,17 @@ export default function TestimonialsSlider() {
   }
   return (
     <>
-      <article className="w-full flex flex-col gap-5 py-8 text-white lg:pt-0  pt-[90px] md:-mt-[100px]">
+      <article className="w-full flex flex-col gap-5 py-8 text-white lg:pt-0  pt-[90px] md:mt-[100px]">
         <h2
           className="lg:text-7xl font-bold lg:text-end overflow-hidden text-center text-5xl text-transparent bg-clip-text  pr-[40px]  "
           id="gradient"
           data-aos="zoom-in-left"
-          data-aos-easing="ease-in-sine"
         >
           Depoimentos
         </h2>
         <p
           className="mb-6 lg:text-end text-center  pr-[40px]  "
           data-aos="zoom-in-left"
-          data-aos-easing="ease-in-sine"
         >
           Oque os meus clientes dizem acerca dos meus serviços
         </p>
@@ -202,21 +200,23 @@ export default function TestimonialsSlider() {
             {testimonials.concat(testimonials).map((t, i) => (
               <div
                 key={i}
-                className="min-w-[300] sm:w-[200px] lg:h-[130px]   rounded-xl shadow-md flex-shrink-0 flex flex-col gap-4
+                className=" overflow-hidden min-w-[300] sm:w-[200px] lg:h-[130px]   rounded-xl shadow-md flex-shrink-0 flex flex-col gap-4
                 "
                 id="transparent"
               >
                 <span
-                  className="font-semibold h-[30px] flex justify-center items-center rounded-full w-[30px]"
+                  className="font-semibold h-[30px] flex justify-center items-center rounded-full w-[30px] overflow-hidden"
                   id="gradient"
                 >
                   {t.firstname?.charAt(0)?.toUpperCase()}
                   {t.lastname?.charAt(0)?.toUpperCase()}
                 </span>
-                <h1 className="font-semibold">
+                <h1 className="font-semibold overflow-hidden">
                   {t.firstname} {t.lastname}
                 </h1>
-                <p className="text-sm italic mb-2">"{t.text}"</p>
+                <p className=" overflow-hidden text-sm italic mb-2">
+                  "{t.text}"
+                </p>
               </div>
             ))}
           </div>
@@ -225,7 +225,6 @@ export default function TestimonialsSlider() {
       <aside>
         <span
           data-aos="zoom-in"
-          data-aos-easing="ease-in-sine"
           className="flex flex-col gap-4 place-self-center py-20 justify-center items-center w-[90%] lg:w-[70%] md:w-[80%]"
           id="subscribe"
         >
@@ -284,7 +283,6 @@ export default function TestimonialsSlider() {
           className="lg:h-[500px] lg:w-[40%] md:w-[80%] text-white flex flex-col ga-[20px]"
           id="contcta"
           data-aos="zoom-in-right"
-          data-aos-easing="ease-in-sine"
         >
           <h1
             className="text-5xl font-semibold 
@@ -342,7 +340,6 @@ export default function TestimonialsSlider() {
 
         <form
           data-aos="zoom-in-left"
-          data-aos-easing="ease-in-sine"
           id="contact"
           onSubmit={senEmail}
           className="h-[500px] w-full  flex flex-col gap-4 lg:h-[500px] lg:w-[40%] md:w-[80%]"
@@ -419,7 +416,6 @@ export default function TestimonialsSlider() {
         src={hero}
         alt="Hero"
         data-aos="zoom-in"
-        data-aos-easing="ease-in-sine"
       />
     </>
   );

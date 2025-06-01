@@ -36,7 +36,7 @@ export function Servive({ service }: { service: IMyServices }) {
       id="service"
       data-aos="fade-up"
     >
-      <span className="flex gap-3" data-aos="fade-right" data-aos-delay="200">
+      <span className="flex gap-3" data-aos="fade-right">
         <b className="h-[10px] w-[10px] rounded-full bg-purple-400"></b>{" "}
         <b className="h-[10px] w-[10px] rounded-full bg-purple-600"></b>{" "}
         <b className="h-[10px] w-[10px] rounded-full bg-purple-800"></b>
@@ -45,14 +45,12 @@ export function Servive({ service }: { service: IMyServices }) {
         className="flex justify-center relative overflow-hidden w-full rounded-[10px] h-[250px]"
         id="gradient"
         data-aos="fade-left"
-        data-aos-delay="300"
       >
         <Image
           src={service.cover}
           className="h-full object-contain"
           alt="Cover"
           data-aos="fade-up"
-          data-aos-delay="400"
         />
         <aside className="absolute place-self-center w-full h-full text-center flex justify-center items-center opacity-0 transition p-4">
           <p>{service.description}</p>
@@ -61,13 +59,11 @@ export function Servive({ service }: { service: IMyServices }) {
       <h1
         className="text-xl font-semibold"
         data-aos="fade-right"
-        data-aos-delay="200"
       >
         {service.title}
       </h1>
       <footer
         data-aos="fade-up"
-        data-aos-delay="300"
         className="flex justify-between items-center gap-4"
       >
         <div className="flex flex-col gap-2">

@@ -13,13 +13,12 @@ export default function Experiences() {
       className="pt-[120px] flex flex-col lg:flex-row gap-[20px] lg:pl-[50px] lg:pr-[50px] p-[20px] pr-[35px] text-white lg:pb-[40px]"
     >
       <article
-        className="lg:w-[70%] w-full flex flex-col gap-9"
+        className="lg:w-[50%] w-full flex flex-col gap-9"
         data-aos="zoom-in-right"
       >
         <div
           className="flex items-center gap-2"
           data-aos="zoom-in-left"
-          data-aos-easing="ease-in-sine"
         >
           <span>
             <Rocket size={14} />
@@ -59,7 +58,7 @@ export default function Experiences() {
         </div>
       </article>
       <aside
-        className="lg:w-[50%] grid md:grid-cols-2 gap-7 overflow-visible"
+        className="lg:w-[50%]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-7"
         data-aos="fade-left"
       >
         {Array.isArray(myExperinece) &&

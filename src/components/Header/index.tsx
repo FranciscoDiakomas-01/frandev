@@ -46,7 +46,6 @@ export default function Header() {
           <div
             className="flex gap-5 mt-4 overflow-hidden"
             data-aos="zoom-in-right"
-            data-aos-delay="100"
           >
             {LeftLinks.map((link, index) => (
               <a
@@ -65,14 +64,12 @@ export default function Header() {
             className="flex justify-center
          items-center"
             data-aos="zoom-in-up"
-            data-aos-delay="200"
           >
             <Logo showLabel={false} />
           </div>
           <div
             className="flex justify-end gap-4 items-center  mt-4"
             data-aos="zoom-in-left"
-            data-aos-delay="300"
           >
             <button
               className="flex items-center justify-center gap-2 w-[120px] rounded-full p-[5px]"

@@ -73,7 +73,6 @@ export default function Projects() {
                     data-aos="fade-up"
                     id="projects"
                     key={key}
-                    data-aos-delay="200"
                     className={`rounded-sm overflow-hidden relative text-white p-3 flex flex-col gap-4`}
                   >
                     <span className="flex gap-3" data-aos="fade-right">

@@ -27,7 +27,6 @@ export default function About() {
           <p
             className="text-white lg:w-[80%]"
             data-aos="zoom-in"
-            data-aos-delay="100"
           >
             Sou desenvolvedor Fullstack com experiência em web, mobile e
             desktop, apaixonado por transformar ideias em soluções digitais
@@ -38,7 +37,6 @@ export default function About() {
           <footer className="flex items-center gap-4 p-2 overflow-hidden">
             <button
               data-aos="fade-right"
-              data-aos-delay="200"
               id="gradient"
               className=" w-[250px]  text-white rounded-full p-3 overflow-visible transition flex items-center gap-4  justify-center"
               onClick={() => {
@@ -50,7 +48,6 @@ export default function About() {
             </button>
             <button
               data-aos="fade-up"
-              data-aos-delay="400"
               className="w-[250px]  text-white rounded-full p-3 overflow-visible transition flex items-center gap-4  justify-center"
               onClick={() => {
                 goTO("#enterContact", false);
@@ -73,7 +70,6 @@ export default function About() {
             alt="avatar"
             loading="lazy"
             data-aos="fade-up"
-            data-aos-delay="600"
           />
         </div>
       </aside>

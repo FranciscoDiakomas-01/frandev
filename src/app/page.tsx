@@ -23,7 +23,6 @@ export default function App() {
       duration: 1000,
       once: false,
       offset: 80,
-      easing: "ease-out-cubic",
     });
   }, []);
 

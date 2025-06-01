@@ -40,7 +40,7 @@ export default function Skills() {
         </div>
       </article>
       {Array.isArray(myskills.skills) && myskills.skills?.length > 0 && (
-        <aside className="grid lg:grid-cols-6 gap-[20px] overflow-visible md:grid-cols-4 grid-cols-2">
+        <aside className="grid lg:grid-cols-6 gap-[20px] overflow-hidden md:grid-cols-4 grid-cols-2">
           {myskills.skills.map((skill, index) => (
             <figure
               data-aos="fade-up"
@@ -91,7 +91,7 @@ export default function Skills() {
 
       {Array.isArray(myskills.softSkills) &&
         myskills.softSkills?.length > 0 && (
-          <aside className="grid lg:grid-cols-3 gap-[20px] overflow-visible md:grid-cols-2 grid-cols-1">
+          <aside className="grid lg:grid-cols-3 gap-[20px] overflow-hidden md:grid-cols-2 grid-cols-1">
             {myskills.softSkills.map((skill, index) => (
               <span
                 data-aos="zoom-in"

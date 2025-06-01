@@ -16,14 +16,12 @@ export default function Home() {
         <p
           className="text-center lg:mt-0 lg:mb-0 mt-[10px] mb-[10px]"
           data-aos="fade-left"
-          data-aos-delay="100"
         >
           Especialista em aplicações Web, Mobile e Desktop, transformo ideias em
           produtos funcionais, modernos e intuitivos
         </p>
         <footer
           data-aos="fade-right"
-          data-aos-delay="400"
           className="flex w-full gap-5 p-2 justify-center items-center"
         >
           <button
