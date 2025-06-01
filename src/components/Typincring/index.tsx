@@ -42,7 +42,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
 
   return (
     <div className="flex gap-1  min-h-[30px] items-center">
-      <h2 className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-3xl overflow-hidden">
+      <h2 className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-3xl overflow-hidden lg:text-start text-center">
         {currentText}
       </h2>
       <span className=" text-white border-l-3  h-[30px]"></span>
