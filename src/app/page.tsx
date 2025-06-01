@@ -21,7 +21,7 @@ export default function App() {
     setIsClient(true);
     AOS.init({
       duration: 1000,
-      once: false,
+      once: true,
       offset: 80,
     });
   }, []);

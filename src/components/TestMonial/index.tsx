@@ -260,9 +260,7 @@ export default function TestimonialsSlider() {
             >
               {" "}
               {load2 ? (
-                <div className="flex items-center justify-center w-[15px] h-[15px] overflow-visible">
-                  <div className="w-[15px] h-[15px] border-1  rounded-full animate-spin border-white"></div>
-                </div>
+                <b>...</b>
               ) : (
                 <>
                   <Send size={13} />
@@ -396,9 +394,7 @@ export default function TestimonialsSlider() {
             className="rounded-full flex justify-center items-center p-2.5 gap-2 "
           >
             {load ? (
-              <div className="flex items-center justify-center w-[15px] h-[15px] overflow-visible">
-                <div className="w-[15px] h-[15px] border-1  rounded-full animate-spin border-white"></div>
-              </div>
+              <b>...</b>
             ) : (
               <>
                 <Send size={13} />
