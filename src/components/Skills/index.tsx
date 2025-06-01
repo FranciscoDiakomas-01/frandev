@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="pt-[140px] flex flex-col gap-[50px] lg:pl-[40px] lg:pr-[40px] p-[20px] pr-[35px]"
+      className="pt-[140px] flex flex-col gap-[50px] lg:pl-[40px] lg:pr-[40px] p-[20px]"
     >
       <article className="flex flex-col gap-7 ">
         <div

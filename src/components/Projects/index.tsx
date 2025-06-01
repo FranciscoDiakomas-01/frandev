@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <section
       id="project"
-      className="flex flex-col lg:pt-[120px] gap-[40px] lg:pl-[40px] lg:pr-[40px] items-center pt-[90px] pr-[20px] pl-[10px]"
+      className="flex flex-col lg:pt-[120px] gap-[40px] lg:pl-[40px] lg:pr-[40px] items-center pt-[90px] pr-[10px] pl-[10px]"
     >
       <h1
         className="text-7xl font-bold overflow-hidden text-white p-1 text-center lg:text-start"

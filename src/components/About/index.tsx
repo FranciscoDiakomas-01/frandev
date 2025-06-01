@@ -35,7 +35,7 @@ export default function About() {
             foco em performance, escalabilidade e uma ótima experiência do
             usuário (UI/UX).
           </p>
-          <footer className="flex items-center gap-4 p-2 overflow-visible">
+          <footer className="flex items-center gap-4 p-2 overflow-hidden">
             <button
               data-aos="fade-right"
               data-aos-delay="200"

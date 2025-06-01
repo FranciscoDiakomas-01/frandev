@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="flex flex-col gap-8 lg:pl-[40px] lg:pr-[40px] lg:pt-[120px] pt-[60px] pl-[20px] pr-[35px]"
+      className="flex flex-col gap-8 lg:pl-[40px] lg:pr-[40px] lg:pt-[120px] pt-[60px] pl-[20px] pr-[25px]"
     >
       <h1
         className="text-4xl font-bold text-white overflow-hidden"

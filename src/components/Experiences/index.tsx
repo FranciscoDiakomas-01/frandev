@@ -28,7 +28,7 @@ export default function Experiences() {
         </div>
         <h1
           id="gradient"
-          className="lg:w-[80%] bg-clip-text text-transparent lg:text-7xl text-6xl font-bold lg:overflow-hidden overflow-visible wrap-anywhere"
+          className="lg:w-[80%] bg-clip-text text-transparent lg:text-7xl text-6xl font-bold lg:overflow-hidden  wrap-anywhere overflow-hidden"
         >
           Algumas das Minhas Experiências
         </h1>
