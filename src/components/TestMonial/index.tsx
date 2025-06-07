@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import "./index.css";
 import {
   FaWhatsapp,
@@ -8,7 +8,6 @@ import {
   FaLinkedin,
   FaInstagram,
   FaGithub,
-  FaYoutube,
 } from "react-icons/fa";
 
 import {
@@ -20,38 +19,10 @@ import {
 
 import hero from "@/assets/hero-img.webp";
 import Image from "next/image";
-import { SendMessage, susbribeEmail } from "@/services/util/senmail";
+import { SendMessage } from "@/services/util/senmail";
 
-const testimonials = [
-  {
-    firstname: "Ana",
-    lastname: "Silva",
-    text: "O trabalho foi excelente! Super atencioso e entregou antes do prazo.",
-  },
-  {
-    firstname: "Carlos",
-    lastname: "Oliveira",
-    text: "Serviço de altíssima qualidade, recomendo com certeza!",
-  },
-  {
-    firstname: "Julia",
-    lastname: "Martins",
-    text: "Conseguiu transformar a ideia em realidade. Muito profissional.",
-  },
-  {
-    firstname: "Rafael",
-    lastname: "Souza",
-    text: "Atendimento rápido e ótimo resultado. Projeto ficou incrível!",
-  },
-  {
-    firstname: "Beatriz",
-    lastname: "Almeida",
-    text: "Detalhista, comprometido e com excelente comunicação. 10/10!",
-  },
-];
 
 export default function TestimonialsSlider() {
-  const containerRef = useRef<HTMLDivElement>(null);
   const sosialMidasLinks = [
     {
       name: "GitHub",
@@ -78,49 +49,9 @@ export default function TestimonialsSlider() {
       url: "https://wa.me/+244957777993?text=Olá!%20Vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços.",
       icon: <FaWhatsapp size={19} />,
     },
-    {
-      name: "YouTube",
-      url: "https://www.youtube.com/@FranciscoDiakomas-x2p",
-      icon: <FaYoutube size={19} />,
-    },
   ];
   const [load, setLoad] = useState(false);
   const [result, setResult] = useState("");
-  const [load2, setLoad2] = useState(false);
-  const [result2, setResult2] = useState("");
-  useEffect(() => {
-    const container = containerRef.current;
-    let animationFrame: number;
-    let scrollSpeed = 1;
-
-    function scrollContent() {
-      if (container) {
-        container.scrollLeft += scrollSpeed;
-        if (
-          container.scrollLeft + container.clientWidth >=
-          container.scrollWidth
-        ) {
-          container.scrollLeft = 0;
-        }
-      }
-      animationFrame = requestAnimationFrame(scrollContent);
-    }
-
-    animationFrame = requestAnimationFrame(scrollContent);
-
-    const pause = () => cancelAnimationFrame(animationFrame);
-    const resume = () =>
-      (animationFrame = requestAnimationFrame(scrollContent));
-
-    container?.addEventListener("mouseenter", pause);
-    container?.addEventListener("mouseleave", resume);
-
-    return () => {
-      cancelAnimationFrame(animationFrame);
-      container?.removeEventListener("mouseenter", pause);
-      container?.removeEventListener("mouseleave", resume);
-    };
-  }, []);
 
   async function senEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -152,127 +83,8 @@ export default function TestimonialsSlider() {
     }, 3000);
   }
 
-
-  async function subsCrbeEMail(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-
-    const form = new FormData(e.currentTarget);
-    const email = form.get("email2") as string;
-    setLoad2(true);
-    const wasSent = await susbribeEmail({
-      email
-    });
-    if (wasSent) {
-      setResult2("Email enviado com sucesso");
-      const forms = document.querySelectorAll("form");
-      forms.forEach((ele) => {
-        ele.reset();
-      });
-    } else {
-      setResult2("Erro ao enviar o email");
-    }
-    setTimeout(() => {
-      setLoad2(false);
-      setResult2("");
-    }, 3000);
-  }
   return (
     <>
-      <article className="w-full flex flex-col gap-5 py-8 text-white lg:pt-0  pt-[90px] md:mt-[100px]">
-        <h2
-          className="lg:text-7xl font-bold lg:text-end overflow-hidden text-center text-5xl text-transparent bg-clip-text  pr-[40px]  "
-          id="gradient"
-          data-aos="zoom-in-left"
-        >
-          Depoimentos
-        </h2>
-        <p
-          className="mb-6 lg:text-end text-center  pr-[40px]  "
-          data-aos="zoom-in-left"
-        >
-          Oque os meus clientes dizem acerca dos meus serviços
-        </p>
-        <article id="scroll" className="w-full">
-          <div
-            ref={containerRef}
-            className="flex overflow-x-auto w-full gap-4 px-4 no-scrollbar"
-          >
-            {testimonials.concat(testimonials).map((t, i) => (
-              <div
-                key={i}
-                className=" overflow-hidden min-w-[300] sm:w-[200px] lg:h-[130px]   rounded-xl shadow-md flex-shrink-0 flex flex-col gap-4
-                "
-                id="transparent"
-              >
-                <span
-                  className="font-semibold h-[30px] flex justify-center items-center rounded-full w-[30px] overflow-hidden"
-                  id="gradient"
-                >
-                  {t.firstname?.charAt(0)?.toUpperCase()}
-                  {t.lastname?.charAt(0)?.toUpperCase()}
-                </span>
-                <h1 className="font-semibold overflow-hidden">
-                  {t.firstname} {t.lastname}
-                </h1>
-                <p className=" overflow-hidden text-sm italic mb-2">
-                  "{t.text}"
-                </p>
-              </div>
-            ))}
-          </div>
-        </article>
-      </article>
-      <aside>
-        <span
-          data-aos="zoom-in"
-          className="flex flex-col gap-4 place-self-center py-20 justify-center items-center w-[90%] lg:w-[70%] md:w-[80%]"
-          id="subscribe"
-        >
-          <h1 className="text-5xl md:text-5xl sm:text-xl font-semibold text-center overflow-hidden ">
-            Subscreva-se para mais{" "}
-            <span
-              id="gradient"
-              className="text-5xl font-semibold 
-             text-transparent bg-clip-text"
-            >
-              Novidades
-            </span>
-          </h1>
-          <p className="text-center">
-            Receba atualizações sobre novos projetos e serviços.
-          </p>
-          <form
-            className="flex flex-col p-2 gap-[20px] w-full  lg:w-[50%]"
-            onSubmit={subsCrbeEMail}
-          >
-            <input
-              type="email"
-              placeholder="Digite seu email"
-              className="input"
-              required
-              name="email2"
-              id="email2"
-            />
-            <button
-              type="submit"
-              className="bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-300 flex items-center justify-center gap-2 w-full p-3"
-              id="gradient"
-            >
-              {" "}
-              {load2 ? (
-                <b>...</b>
-              ) : (
-                <>
-                  <Send size={13} />
-                  Enviar
-                </>
-              )}
-            </button>
-
-            <p className="text-center">{result2}</p>
-          </form>
-        </span>
-      </aside>
       <aside
         className=" gap-7 lg:gap-0 pt-[90px] py-8 flex flex-col lg:flex-row items-center justify-center p-[20px]  lg:pr-[40px] lg:pl-[40px] lg:pt-[120px]"
         id="enterContact"
@@ -320,7 +132,7 @@ export default function TestimonialsSlider() {
               Luanda {">"} Angola {">"} Cacuaco
             </p>
           </div>
-          <footer className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-4 mt-4 p-3">
+          <footer className="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-4 mt-4 p-3">
             {sosialMidasLinks.map((link, index) => (
               <a
                 id="social"

@@ -34,7 +34,7 @@ export default function Experiences() {
 
         <div
           id="transparent"
-          className="flex flex-col gap-4 md:w-[70%] lg:w-[70%]"
+          className="flex-col gap-4 md:w-[70%] lg:w-[70%] lg:flex hidden"
           data-aos="zoom-in"
         >
           <h2 className="text-[17px]">

@@ -5,11 +5,10 @@ export default interface IProject {
   title: string;
   cover: StaticImageData;
   description: string;
-  type: "Public" | "Private",
-  category : "FullStack" | "Backend" | "Mobile" | "UI UX" | "FrontEnd" | "Desktop"
-  videoURL: string,
-  gitHubURL: string,
-  siteURL : string
-  tecnologies: string[],
-  
+  type: "Public" | "Private";
+  category: "Web" | "Mobile" | "UI UX" ;
+  videoURL: string;
+  gitHubURL: string;
+  siteURL: string;
+  tecnologies: string[];
 }

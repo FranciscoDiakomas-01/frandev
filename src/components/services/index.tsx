@@ -3,8 +3,6 @@ import "./index.css";
 import Image from "next/image";
 import compactNumberUSA from "@/services/util/compactNumber";
 import myServices from "@/constants/myServices";
-import { Send } from "lucide-react";
-import goTO from "@/services/util/goTo";
 export default function Services() {
   return (
     <section
@@ -15,9 +13,9 @@ export default function Services() {
         className="text-4xl font-bold text-white overflow-hidden"
         data-aos="fade-right"
       >
-        Explore os{"  "}
+        Meus{"  "}
         <span className="text-4xl font-bold" id="gradient">
-          Meus Serviços
+           Serviços
         </span>
       </h1>
       <aside className="grid lg:grid-cols-3 gap-[20px] p-2 overflow-hidden md:grid-cols-2 sm:grid-cols-1">
@@ -62,27 +60,6 @@ export function Servive({ service }: { service: IMyServices }) {
       >
         {service.title}
       </h1>
-      <footer
-        data-aos="fade-up"
-        className="flex justify-between items-center gap-4"
-      >
-        <div className="flex flex-col gap-2">
-          <small>Projectos</small>
-          <h2 className="text-3xl opacity-70 overflow-hidden">
-            +{compactNumberUSA(service.projects)}
-          </h2>
-        </div>
-        <button
-          id="gradient"
-          className="rounded-full min-w-[40%]min-w-[40%]  p-3 flex justify-center items-center gap-2 transition"
-          onClick={() => {
-            goTO("https://github.com/FranciscoDiakomas-01", true);
-          }}
-        >
-          <Send size={15} />
-          <p>Ver projectos</p>
-        </button>
-      </footer>
     </figure>
   );
 }

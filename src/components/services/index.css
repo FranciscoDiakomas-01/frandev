@@ -17,15 +17,11 @@
   border: solid 1px transparent;
 }
 #service:hover {
-  box-shadow: 1px 1px 5ic #8257e531;
   border: solid 1px #8257e5;
 }
 #service div,
 #service img {
   transition: all 0.5s linear;
-}
-#service div:hover img {
-  transform: translateY(-20px) rotate(40deg) translateX(20px);
 }
 #services div#gradient {
   

@@ -81,12 +81,12 @@ export default function Header() {
               Contactar <Phone size={12} />
             </button>
             <button
-              className=" w-[70px] p-[5px] items-center justify-center gap-1 flex rounded-sm text-black bg-white"
+              className="  w-[120px] p-[5px] items-center justify-center gap-1 flex rounded-full text-black bg-white"
               onClick={() => {
                 goTO("https://github.com/FranciscoDiakomas-01", true);
               }}
             >
-              +42
+              github
               <Image
                 className="h-[20px] w-[20px] object-contain"
                 src={giHub}
@@ -152,7 +152,7 @@ export default function Header() {
             goTO("https://github.com/FranciscoDiakomas-01", true);
           }}
         >
-          +42
+          github
           <Image
             className="h-[20px] w-[20px] object-contain"
             src={giHub}

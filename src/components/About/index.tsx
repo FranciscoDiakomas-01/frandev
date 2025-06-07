@@ -7,10 +7,8 @@ import goTO from "@/services/util/goTo";
 import downloadFile from "@/services/util/download";
 export default function About() {
   const titles = [
-    "Fullstack Web",
+    "Web Developer",
     "Mobile Developer",
-    "Desktop Developer",
-    "Frontend Developer",
     "UI/UX Designer",
   ];
   return (

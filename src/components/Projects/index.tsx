@@ -9,16 +9,13 @@ import Loader from "../Loader";
 import goTO from "@/services/util/goTo";
 
 export default function Projects() {
-  const [filter, setFilter] = useState<
-    "FullStack" | "Backend" | "Mobile" | "UI UX" | "FrontEnd" | "Desktop"
-  >("FullStack");
+  const [filter, setFilter] = useState<"Web" | "Mobile" | "UI UX">("Web");
   const [loader, setLoader] = useState(true);
   useEffect(() => {
     setLoader(true);
-
     setTimeout(() => {
       setLoader(false);
-    }, 3000);
+    }, 1000);
   }, [filter]);
   return (
     <section
@@ -40,24 +37,22 @@ export default function Projects() {
       </h1>
 
       <div
-        className="p-4 lg:flex gap-4 overflow-hidden grid md:grid-cols-3 grid-cols-2"
+        className="p-4 lg:flex gap-4 overflow-hidden grid  grid-cols-3"
         data-aos="fade-up"
       >
-        {["FullStack", "Backend", "FrontEnd", "Mobile", "Desktop", "UI UX"].map(
-          (item) => (
-            <button
-              key={item}
-              onClick={() => setFilter(item as typeof filter)}
-              className={`px-4 transition-all w-[140px] py-2 rounded-full ${
-                filter === item
-                  ? "bg-gradient-to-r from-purple-400 to-purple-700 text-white"
-                  : "bg-white  border-gray-300"
-              }`}
-            >
-              {item}
-            </button>
-          )
-        )}
+        {["Web", "UI UX"].map((item) => (
+          <button
+            key={item}
+            onClick={() => setFilter(item as typeof filter)}
+            className={`px-4 transition-all w-[140px] py-2 rounded-full ${
+              filter === item
+                ? "bg-gradient-to-r from-purple-400 to-purple-700 text-white"
+                : "bg-white  border-gray-300"
+            }`}
+          >
+            {item}
+          </button>
+        ))}
       </div>
 
       {loader ? (
@@ -84,21 +79,17 @@ export default function Projects() {
                     <div
                       className="flex items-center justify-center h-[270px] rounded-[10px]"
                       id="gradient"
-                      data-aos="fade-left"
                     >
                       <Image
                         className="z-1 h-full w-full rounded-[10px]"
-                        src={pr.category == "Backend" ? code : pr.cover}
+                        src={pr.category == "UI UX" ? code :  pr.cover}
                         alt={pr.title}
                       />
                     </div>
 
                     <h1
                       className="text-xl font-semibold flex gap-1 items-center"
-                      data-aos="fade-right"
                     >
-                      {" "}
-                      {pr.type == "Private" && <Lock size={14} />}
                       {pr.title}
                     </h1>
                     <div
@@ -123,7 +114,6 @@ export default function Projects() {
                     </div>
                     <figcaption
                       className="grid grid-cols-2  gap-4 z-4"
-                      data-aos="zoom-in"
                     >
                       {pr.siteURL && (
                         <button

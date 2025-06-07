@@ -1,18 +1,13 @@
 import IProject from "@/types/project";
 import enna from "@/assets/projects/enna.jpeg";
-import pronance from "@/assets/projects/pronance.jpg";
+import pronance from "@/assets/projects/pronance.png";
 import smart from "@/assets/projects/smattpresence.jpeg";
-import secap from "@/assets/projects/secap.jpeg";
-import lifestyle from "@/assets/projects/lifeStyle.jpg";
 import ima from "@/assets/projects/ima.jpeg";
 import akuami from "@/assets/projects/akuami.jpeg";
-import fastfood from "@/assets/projects/FastFood.png";
-import wheaher from "@/assets/projects/wheater.jpeg";
-import timer from "@/assets/projects/download.png";
 const Projects: IProject[] = [
   {
     cover: enna,
-    category: "FullStack",
+    category: "Web",
     description:
       "Sistema desenvolvido para técnicos de help desk da Enna, com o objetivo de organizar e monitorar atividades diárias, semanais e mensais de forma eficiente.",
     gitHubURL: "https://github.com/FranciscoDiakomas-01/enna",
@@ -22,8 +17,6 @@ const Projects: IProject[] = [
     type: "Private",
     tecnologies: [
       "Next Js",
-      "React Js",
-      "Node Js",
       "Nest Js",
       "Typescript",
       "Taiwind Css",
@@ -33,29 +26,27 @@ const Projects: IProject[] = [
   },
   {
     cover: pronance,
-    category: "FullStack",
+    category: "Web",
     description:
-      "O sistema E-Learning foi desenvolvido com o objetivo de facilitar o acesso à educação digital de forma simples, acessível e eficiente. A plataforma permite que alunos se cadastrem, escolham cursos, assistam às aulas, realizem avaliações e recebam certificados de conclusão — tudo isso de forma online e responsiva",
-    gitHubURL: "https://github.com/FranciscoDiakomas-01/PronancePlatform-pro",
+      "O sistema E-Learning. A plataforma permite que alunos se cadastrem, escolham cursos, assistam às aulas e recebam certificados de conclusão.",
+    gitHubURL: "https://github.com/FranciscoDiakomas-01/PronancePlatform-mvp",
     id: 12,
-    siteURL: "https://pronance-rouge.vercel.app/",
+    siteURL: "https://pronance-platform-mvp.vercel.app/",
     title: "Pronance",
     type: "Private",
     tecnologies: [
       "React Js",
       "Node Js",
-      "Expreess Js",
       "Typescript",
-      "Taiwind Css",
       "Postgres",
     ],
     videoURL: "",
   },
   {
     cover: smart,
-    category: "FullStack",
+    category: "Web",
     description:
-      "O sistema de controle de presença por QR Code foi desenvolvido para modernizar e automatizar o registro de presença em eventos, aulas, workshops, empresas ou qualquer outro ambiente que exija controle de frequência. A solução é rápida, segura, e reduz drasticamente o risco de fraudes ou registros manuais incorretos.",
+      "O sistema de controle de presença por QR Code desenvolvido para modernizar e automatizar o registro de presença.",
     gitHubURL: "https://github.com/FranciscoDiakomas-01/smrtPresence-master",
     id: 1,
     siteURL: "https://smartpresence2025.vercel.app/",
@@ -64,57 +55,29 @@ const Projects: IProject[] = [
     tecnologies: [
       "React Js",
       "Node Js",
-      "Expreess Js",
       "Typescript",
-      "Csss",
       "Mysql",
     ],
     videoURL: "",
   },
   {
-    cover: secap,
-    category: "Backend",
-    description:
-      "O Sistema de Educação, Formação e Capacitação foi desenvolvido com o objetivo de oferecer uma plataforma integrada e acessível para o desenvolvimento educacional, técnico e profissional de alunos, colaboradores e membros de instituições públicas ou privadas.",
-    gitHubURL: "https://github.com/FranciscoDiakomas-01/secap-backend",
-    id: 1,
-    siteURL: "",
-    title: "Secap",
-    type: "Private",
-    tecnologies: ["Node Js", "Nest Js", "Typescript", "Prisma", "Postgres"],
-    videoURL: "",
-  },
-  {
-    cover: lifestyle,
-    category: "FrontEnd",
-    description:
-      "A landing page da loja de roupas foi projetada para causar impacto visual imediato, comunicar os valores da marca, destacar os principais produtos e converter visitantes em compradores. Com um design responsivo e interativo, a página transmite sofisticação, praticidade e identidade de moda.",
-    gitHubURL: "",
-    id: 1,
-    siteURL: "",
-    title: "LifeStyle",
-    type: "Public",
-    tecnologies: ["React Js", "Typescript", "Gsap", "Css"],
-    videoURL: "",
-  },
-  {
     cover: ima,
-    category: "FrontEnd",
+    category: "Web",
     description:
-      "Essa landing page foi feita para apresentar a IMA Group , transmitir credibilidade e permitir que os visitantes entrem facilmente em contato via e-mail ou WhatsApp. O design é moderno, limpo e orientado para conversão e confiança.",
+      "Essa landing page foi feita para apresentar a IMA Group , transmitir credibilidade e permitir que os visitantes entrem facilmente em contato via e-mail ou WhatsApp",
     gitHubURL: "https://github.com/FranciscoDiakomas-01/group-ima",
     id: 1,
     siteURL: "https://groupima2025.vercel.app/",
     title: "IMA Group",
     type: "Public",
-    tecnologies: ["React Js", "Typescript", "Gsap", "Css"],
+    tecnologies: ["React Js", "Typescript", "Css"],
     videoURL: "",
   },
   {
     cover: akuami,
-    category: "FullStack",
+    category: "Web",
     description:
-      "A landing page foi cuidadosamente planejada para comunicar tecnologia, confiança e praticidade, apresentando produtos eletrônicos e licenças digitais de forma clara, atrativa e com foco total na conversão do visitante em comprador. O layout é responsivo, moderno e com foco na experiência do usuário.",
+      "E-comercer (loja virtual) com funcionalidades de carrinho , compras , pagamentos e monitoramento de entregas",
     gitHubURL: "https://github.com/FranciscoDiakomas-01/akuami",
     id: 1,
     siteURL: "https://akuami.vercel.app/",
@@ -122,89 +85,39 @@ const Projects: IProject[] = [
     type: "Private",
     tecnologies: [
       "Next Js",
-      "React Js",
       "Node Js",
-      "Nest Js",
       "Typescript",
       "Taiwind Css",
       "Postgres",
     ],
     videoURL: "",
   },
+
   {
-    cover: fastfood,
-    category: "FrontEnd",
-    description:
-      "A landing page foi cuidadosamente planejada para comunicar cozinha, comida . O layout é responsivo, moderno e com foco na experiência do usuário.",
+    cover: enna,
+    category: "UI UX",
+    description: "UI UX no Figma de um  Sistema de gestão escolar",
     gitHubURL: "",
     id: 1,
-    siteURL: "",
-    title: "FastFood",
-    type: "Public",
-    tecnologies: ["HTML5", "CSS", "JS"],
+    siteURL:
+      "https://www.figma.com/design/AyHB0umR85nnML8Qa7yaTE/DashBoard---ELearn-Platform-made-by-Francisco-Diakomas?node-id=0-1&t=zA0NgZPfLdq7OEKp-1",
+    title: "Sistema de gestão Escolar",
+    type: "Private",
+    tecnologies: ["Figma"],
     videoURL: "",
   },
   {
-    cover: wheaher,
-    category: "FrontEnd",
-    description: "App de clima",
-    gitHubURL: "https://github.com/FranciscoDiakomas-01/app-clima",
-    id: 1,
-    siteURL: "https://app-clima-rust-ten.vercel.app/",
-    title: "Wheather APP",
-    type: "Public",
-    tecnologies: ["HTML5", "CSS", "JS"],
-    videoURL: "",
-  },
-  {
-    cover: wheaher,
-    category: "Backend",
-    description: "Backend do meu Blog",
-    gitHubURL: "https://github.com/FranciscoDiakomas-01/FNotes-Backend",
-    id: 1,
-    siteURL: "",
-    title: "FNotes",
-    type: "Public",
-    tecnologies: ["JS", "Express", "Postgres", "Node js"],
-    videoURL: "",
-  },
-  {
-    cover: wheaher,
-    category: "Backend",
+    cover: enna,
+    category: "UI UX",
     description:
-      "Backend do um sistema de postagem muiti usuários , comentários e likes",
-    gitHubURL: "https://github.com/FranciscoDiakomas-01/JiaBackend",
+      "UI UX no Figma de um Sistema d formação , educação e capacitação profissional",
+    gitHubURL: "",
     id: 1,
-    siteURL: "",
-    title: "JIA",
-    type: "Public",
-    tecnologies: ["JS", "Express", "Postgres", "Node js"],
-    videoURL: "",
-  },
-  {
-    cover: wheaher,
-    category: "Backend",
-    description:
-      "Backend do um sistema de publicações escolares , anuncios , cadastro de professores , encarregados  e alunos , com  a possibilidade de views comentários",
-    gitHubURL: "https://github.com/FranciscoDiakomas-01/Osapp28Backedn",
-    id: 1,
-    siteURL: "",
-    title: "OSAP28",
-    type: "Public",
-    tecnologies: ["Express", "Postgres", "Node js", "Typescript"],
-    videoURL: "",
-  },
-  {
-    cover: timer,
-    category: "FrontEnd",
-    description:
-      "Temporizador com as funionalidade de começar , recomeçar , pausar  e toca uma música quando o tempo termina",
-    gitHubURL: "https://github.com/FranciscoDiakomas-01/Pomodoro",
-    id: 1,
-    siteURL: "https://pomodoro-umber-phi.vercel.app/",
-    title: "Temporizador",
-    type: "Public",
-    tecnologies: ["HTML", "CSS", "JS"],
+    siteURL:
+      "https://www.figma.com/design/My4dQM1dKrq6ouANc9ZoMe/AngoLearn?node-id=0-1&t=okFxILzRi1W8TXDR-1",
+    title: "AngoLearn",
+    type: "Private",
+    tecnologies: ["Figma"],
     videoURL: "",
   },
 ];

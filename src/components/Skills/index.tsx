@@ -18,24 +18,10 @@ export default function Skills() {
             className="text-4xl font-semibold overflow-hidden bg-clip-text text-transparent"
             id="gradient"
           >
-            Minhas HardSkills
-          </h1>
-          <p className="opacity-50">
-            Conhecimento técnico em linguagens e bibliotecas modernas
-          </p>
-        </div>
-        <div
-          className="flex flex-col gap-2 text-white place-self-end overflow-hidden"
-          data-aos="fade-left"
-        >
-          <h1
-            className="text-4xl font-semibold overflow-hidden bg-clip-text text-transparent"
-            id="gradient"
-          >
             Especializações técnicas
           </h1>
           <p className="opacity-50">
-            Habilidades práticas que me destacam como dev fullstack
+            Conhecimento técnico em linguagens e bibliotecas modernas
           </p>
         </div>
       </article>
@@ -67,24 +53,10 @@ export default function Skills() {
             className="text-4xl font-semibold overflow-hidden bg-clip-text text-transparent"
             id="gradient"
           >
-            Minhas Soft Skills
-          </h1>
-          <p className="opacity-50">
-            A mentalidade e as atitudes que me tornam um profissional completo
-          </p>
-        </div>
-        <div
-          className="flex flex-col gap-2 text-white place-self-start overflow-hidden"
-          data-aos="fade-right"
-        >
-          <h1
-            className="text-4xl font-semibold overflow-hidden bg-clip-text text-transparent"
-            id="gradient"
-          >
             Habilidades interpessoais
           </h1>
           <p className="opacity-50">
-            Habilidades humanas que impulsionam meu desenvolvimento profissional
+            A mentalidade e as atitudes que me tornam um profissional completo
           </p>
         </div>
       </article>
